@@ -115,5 +115,15 @@ $ git status
           new file:   server/views/index.jade
           new file:   server/views/layout.jade
 $ git commit -m "initialize the project"
-$ git 
+```
+
+Now, we additionally enabled `nodemon` to reload the server code when it gets
+edited.  To do that:
+```bash
+$ cd server
+$ npm install --save-dev nodemon
+$ perl -p -i -e 's/"start": "node /"start": "nodemon /' package.json
+$ git add package.json 
+$ git commit -m "adding nodemon to speed development"
+$ cd ..
 ```
