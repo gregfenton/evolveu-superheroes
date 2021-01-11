@@ -35,6 +35,10 @@ system is running on port *4444*.
 
 # How this project was created
 
+> **NOTE**: you only want to review this section if you are going to create
+an entirely new project leveraging the same technologies and approach used for
+this project
+
 Here are the command-line steps taken to create the initial version of this project:
 ```bash
 $ mkdir superheroes
@@ -81,33 +85,35 @@ $ git status
    
    Changes to be committed:
      (use "git rm --cached <file>..." to unstage)
-           new file:   .gitignore
-           new file:   README.md
-           new file:   client/.env
-           new file:   client/README.md
-           new file:   client/package.json
-           new file:   client/public/favicon.ico
-           new file:   client/public/index.html
-           new file:   client/public/logo192.png
-           new file:   client/public/logo512.png
-           new file:   client/public/manifest.json
-           new file:   client/public/robots.txt
-           new file:   client/src/App.css
-           new file:   client/src/App.js
-           new file:   client/src/App.test.js
-           new file:   client/src/index.css
-           new file:   client/src/index.js
-           new file:   client/src/logo.svg
-           new file:   client/src/reportWebVitals.js
-           new file:   client/src/setupTests.js
-           new file:   server/app.js
-           new file:   server/bin/www
-           new file:   server/package.json
-           new file:   server/public/stylesheets/le.css
-           new file:   server/routes/index.js
-           new file:   server/routes/users.js
-           new file:   server/views/error.jade
-           new file:   server/views/index.jade
-           new file:   server/views/layout.jade
+          new file:   .gitignore
+          new file:   README.md
+          new file:   client/.env
+          new file:   client/README.md
+          new file:   client/package-lock.json
+          new file:   client/package.json
+          new file:   client/public/favicon.ico
+          new file:   client/public/index.html
+          new file:   client/public/logo192.png
+          new file:   client/public/logo512.png
+          new file:   client/public/manifest.json
+          new file:   client/public/robots.txt
+          new file:   client/src/App.css
+          new file:   client/src/App.js
+          new file:   client/src/App.test.js
+          new file:   client/src/index.css
+          new file:   client/src/index.js
+          new file:   client/src/logo.svg
+          new file:   client/src/reportWebVitals.js
+          new file:   client/src/setupTests.js
+          new file:   server/app.js
+          new file:   server/bin/www
+          new file:   server/package.json
+          new file:   server/public/stylesheets/style.css
+          new file:   server/routes/index.js
+          new file:   server/routes/users.js
+          new file:   server/views/error.jade
+          new file:   server/views/index.jade
+          new file:   server/views/layout.jade
 $ git commit -m "initialize the project"
+$ git 
 ```
