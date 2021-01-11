@@ -1,0 +1,24 @@
+# DIRECTORIES TO IGNORE
+**/.pnp/
+**/build/
+**/coverage/
+**/jspm_packages/
+**/logs/
+**/node_modules/
+**/pids/
+**/typings/
+**/.npm/
+
+# FILES TO IGNORE
+*.log
+*.pid
+*.pid.lock
+*.seed
+*.tgz
+.DS_Store
+.env.*.local
+.env.local
+.eslintcache
+.node_repl_history
+.yarn-integrity
+.next
