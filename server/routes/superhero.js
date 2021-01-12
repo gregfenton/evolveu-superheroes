@@ -7,7 +7,7 @@ const Superhero = require('../models/Superhero');
 /* List all superheroes. */
 router.get('/', async (req, res, next) => {
   let data = await Superhero.find({});
-  console.log(`GLF: got from mongoose:`, data)
+  console.info(`records retrieved from mongoose:`, data?.length)
   res.send(data);
 });
 
