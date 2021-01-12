@@ -11,14 +11,16 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  headerCell: {
+    color: 'blue',
+    fontWeight: 'bold',
+  },
+});
+
 const SimpleTable = () => {
   const [rows, setRows] = useState([]);
-  const classes = makeStyles({
-    headerCell: {
-      color: '#4150b6',
-      fontWeight: 'bold',
-    },
-  });
+  const classes = useStyles();
 
   useEffect(() => {
     const getSuperheroes = async () => {
@@ -32,7 +34,7 @@ const SimpleTable = () => {
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label='simple table'>
+      <Table aria-label='simple table'>
         <TableHead>
           <TableRow>
             <TableCell className={classes.headerCell}>Name</TableCell>
