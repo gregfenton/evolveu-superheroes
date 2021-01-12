@@ -1,15 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-let SUPERHEROES = [
-  {name: "Batwoman", nickname: null, alterego: "Kate Kane", sidekick: "Batgirl"},
-  {name: "Bat-Girl", nickname: null, alterego: "Betty Kane", sidekick: null},
-  {name: "Batman", nickname: "The Batman", alterego: "Bruce Wayne", sidekick: "Robin"},
-  {name: "Robin", nickname: "The Boy Wonder", alterego: "Dick Grayson", sidekick: null},
-]
+const mongoose = require('mongoose');
+const Superhero = require('../models/Superhero');
+
 /* List all superheroes. */
-router.get('/', (req, res, next) => {
-  res.send(SUPERHEROES);
+router.get('/', async (req, res, next) => {
+  let data = await Superhero.find({});
+  console.log(`GLF: got from mongoose:`, data)
+  res.send(data);
 });
 
 /* Details of a given superhero. */
