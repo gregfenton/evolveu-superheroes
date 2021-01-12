@@ -3,7 +3,7 @@ var router = express.Router();
 
 let SUPERHEROES = [
   {name: "Batwoman", nickname: null, alterego: "Kate Kane", sidekick: "Batgirl"},
-  {name: "Batwoman", nickname: null, alterego: "Betty Kane", sidekick: null},
+  {name: "Bat-Girl", nickname: null, alterego: "Betty Kane", sidekick: null},
   {name: "Batman", nickname: "The Batman", alterego: "Bruce Wayne", sidekick: "Robin"},
   {name: "Robin", nickname: "The Boy Wonder", alterego: "Dick Grayson", sidekick: null},
 ]
