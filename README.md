@@ -14,9 +14,19 @@ and retrieving data.
 
 # Working with this Codebase
 
+## Get the code
+
+1. Start a command shell (CMD, PowerShell, Terminal, etc.)
+1. Make a directory for your work: `mkdir my_work`
+1. `cd my_work`
+1. Clone the repo: `git clone https://github.com/gregfenton/evolveu-superheroes.git`
+1. `cd evolveu-superheroes`
+1. Start VS Code for this project: `code .`
+1. Now start the Express server and the React client (see next sections)
+
 ## Starting the Express server
 
-In a command shell (CMD, PowerShell, Terminal, etc.) run the commands:
+In a command shell run the commands:
 1. `cd server`
 1. `npm install`
 1. `npm run start`
@@ -31,7 +41,9 @@ In a command shell run the commands:
 1. `npm run start`
 
 Your browser should open to `http://localhost:4444`.  The React development
-system is running on port *4444*.
+system is running on port *4444*.  You should now see a web app showing a
+list of four (4) superheroes.  That data is coming from a
+publically-readable MongoDB running in the cloud.
 
 # Using your own MongoDB instance
 
