@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-const SimpleTable = () => {
+const SuperheroesTable = () => {
   const [rows, setRows] = useState([]);
   const classes = useStyles();
 
@@ -60,4 +60,4 @@ const SimpleTable = () => {
   );
 };
 
-export default SimpleTable;
+export default SuperheroesTable;
