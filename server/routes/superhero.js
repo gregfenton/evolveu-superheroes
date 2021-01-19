@@ -11,7 +11,12 @@ router.get('/', async (req, res, next) => {
   res.send(data);
 });
 
-/* Details of a given superhero. */
+/**
+ * Details of a given superhero.
+ * 
+ * Access with http://<server>:<port>/<prefix>/12345
+ *   (in this codebase, <prefix> is "/superhero" - see app.js)
+ */
 router.get('/:id', function (req, res, next) {
   let superheroId = req.params.id;
   if (!superheroId) {
